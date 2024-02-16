@@ -13,21 +13,21 @@ namespace MCGalaxy
 		public override string welcome { get { return "Loaded Message!"; } }
 		public override string creator { get { return "Goldberg"; } }
 		
-        string folder = "LastLocations";
+        	string folder = "LastLocations";
         
 		public override void Load(bool startup)
 		{
         	if (!Directory.Exists(folder)) 
-            {
-            	Directory.CreateDirectory(folder);
-            }
+            	{
+            		Directory.CreateDirectory(folder);
+            	}
             
         	OnPlayerConnectEvent.Register(HandlePlayerConnect, Priority.Low);
         	OnPlayerDisconnectEvent.Register(HandlePlayerDisconnect, Priority.Low);
 		}
 
 		public override void Unload(bool shutdown)
-        {
+        	{
 			OnPlayerConnectEvent.Unregister(HandlePlayerConnect);
 			OnPlayerDisconnectEvent.Unregister(HandlePlayerDisconnect);
 		}
