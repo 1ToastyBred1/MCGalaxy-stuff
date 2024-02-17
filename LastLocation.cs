@@ -13,7 +13,7 @@ namespace MCGalaxy
 		public override string welcome { get { return "Loaded Message!"; } }
 		public override string creator { get { return "Goldberg"; } }
 		
-        	string folder = "LastLocations";
+        string folder = "LastLocations";
         
 		public override void Load(bool startup)
 		{
