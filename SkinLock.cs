@@ -50,7 +50,7 @@ namespace MCGalaxy {
     }
 
     public override void Help(Player p) {
-      p.Message("Locks skin to the one request in motd.");
+      p.Message("Locks skin to the specified in motd.");
     }
   }
 }
