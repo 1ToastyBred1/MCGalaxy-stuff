@@ -1,5 +1,3 @@
-//Creator: Coconut1234, A.K.A: Naruto1234, Goldberg
-
 using System;
 using MCGalaxy;
 
