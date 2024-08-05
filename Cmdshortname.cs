@@ -15,7 +15,7 @@ public class CmdShortname : Command
 		if (message.Length == 0) 
         {
         	PlayerOperations.SetNick(p, p.name, p.ColoredName);
-            return; 
+        	return; 
         }
         
         string nick = Colors.StripUsed(message);
@@ -23,13 +23,13 @@ public class CmdShortname : Command
         if (nick.Length <= 3)
         {
         	p.Message("&eShortened name must be 3 characters or more.");
-            return;
+        	return;
         }
         
         if (!p.name.Contains(nick))
         {
         	p.Message("&eYour shortened name must be a part of your original name.");
-            return;
+        	return;
         }
         
         PlayerOperations.SetNick(p, p.name, message);
