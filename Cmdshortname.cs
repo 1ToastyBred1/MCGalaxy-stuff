@@ -13,7 +13,7 @@ public class CmdShortname : Command
 	public override void Use(Player p, string message)
 	{
 		if (message.Length == 0) 
-        { 
+        {
         	PlayerOperations.SetNick(p, p.name, p.ColoredName);
             return; 
         }
