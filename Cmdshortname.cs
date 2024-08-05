@@ -14,8 +14,8 @@ public class CmdShortname : Command
     {
         if (message.Length == 0) 
         {
-        	PlayerOperations.SetNick(p, p.name, p.ColoredName);
-        	return; 
+            PlayerOperations.SetNick(p, p.name, p.ColoredName);
+            return; 
         }
 	        
         string nick = Colors.StripUsed(message);
