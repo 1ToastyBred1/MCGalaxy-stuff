@@ -9,7 +9,7 @@ namespace MCGalaxy
 		public override string MCGalaxy_Version { get { return "1.9.4.9"; } }
 		public override string welcome { get { return "Loaded Message!"; } }
 		public override string creator { get { return "ToastyBred"; } }
-	
+
 	
 		public override void Load(bool startup)
 		{
