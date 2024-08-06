@@ -20,13 +20,13 @@ public class CmdShortname : Command
 	        
         string nick = Colors.StripUsed(message);
         	        
-        if (nick.Length <= 3)
+        if (nick.Length < 3)
         {
             p.Message("&eShortened name must be 3 characters or more.");
             return;
         }
         	        
-        if (!p.name.Contains(nick))
+        if (!p.name.ToLower().Contains(nick.ToLower()))
         {
             p.Message("&eYour shortened name must be a part of your original name.");
             return;
