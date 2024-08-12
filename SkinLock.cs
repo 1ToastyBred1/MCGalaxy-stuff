@@ -36,7 +36,7 @@ namespace MCGalaxy {
     }
 
     string GetSkin(Player p) {
-      string skin = "";
+      string skin = string.Empty;
       string motd = p.GetMotd();
 
       if (motd.CaselessContains("skin=")) {
