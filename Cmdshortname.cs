@@ -38,6 +38,6 @@ public class CmdShortname : Command
     public override void Help(Player p)
     {
         p.Message("&a/Shortname [New nick]");
-        p.Message("&eAllows you to shorten your name. Your new name must be a part of your original name. You are allowed to add colors.");
+        p.Message("Allows you to shorten your name. Your new name must be a part of your original name. You are allowed to add colors.");
     }
 }
