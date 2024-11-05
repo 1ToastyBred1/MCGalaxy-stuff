@@ -22,13 +22,13 @@ public class CmdShortname : Command
         	        
         if (nick.Length < 3)
         {
-            p.Message("&eShortened name must be 3 characters or more.");
+            p.Message("Shortened name must be 3 characters or more.");
             return;
         }
         	        
         if (!p.name.ToLower().Contains(nick.ToLower()))
         {
-            p.Message("&eYour shortened name must be a part of your original name.");
+            p.Message("Your shortened name must be a part of your original name.");
             return;
         }
         	        
