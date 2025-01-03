@@ -36,7 +36,7 @@ namespace MCGalaxy
 	            	Thread.Sleep(1000);
 	                try{
 	                    string info = File.ReadAllText(folder + "/" + p.name);
-	                    string[] args = info.Split(" ");
+	                    string[] args = info.Split(' ');
 	                    if (p.level.name != args[5]){
 	                        PlayerActions.ChangeMap(p, args[5]);
 	                    }
